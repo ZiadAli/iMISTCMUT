@@ -7,23 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		473EC34A8C439C7663A33258 /* Pods_iMIST.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EE7EDE06DAC8751311B277 /* Pods_iMIST.framework */; };
+		9915ADC21EB19AE100BFCFEA /* DevicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9915ADC11EB19AE100BFCFEA /* DevicesViewController.swift */; };
 		993178A71EB14DAC00029443 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993178A61EB14DAC00029443 /* AppDelegate.swift */; };
-		993178A91EB14DAC00029443 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993178A81EB14DAC00029443 /* ViewController.swift */; };
 		993178AC1EB14DAC00029443 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 993178AA1EB14DAC00029443 /* Main.storyboard */; };
 		993178AF1EB14DAC00029443 /* iMIST.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 993178AD1EB14DAC00029443 /* iMIST.xcdatamodeld */; };
 		993178B11EB14DAC00029443 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 993178B01EB14DAC00029443 /* Assets.xcassets */; };
 		993178B41EB14DAC00029443 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 993178B21EB14DAC00029443 /* LaunchScreen.storyboard */; };
+		993178BC1EB16F7100029443 /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993178BB1EB16F7100029443 /* ChartsViewController.swift */; };
+		993178C21EB1722900029443 /* ChartsBluetoothDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993178C11EB1722900029443 /* ChartsBluetoothDelegate.swift */; };
+		993178C41EB1774600029443 /* BluetoothDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993178C31EB1774600029443 /* BluetoothDevice.swift */; };
+		996DF2F81EB309C7002DF662 /* CMUTChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996DF2F71EB309C7002DF662 /* CMUTChartView.swift */; };
+		996DF2FA1EB30C11002DF662 /* ChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996DF2F91EB30C11002DF662 /* ChartCell.swift */; };
+		99978A7F1EB268690037AEB9 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99978A7E1EB268690037AEB9 /* DataViewController.swift */; };
+		99978A811EB2691B0037AEB9 /* CMUTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99978A801EB2691B0037AEB9 /* CMUTCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9915ADC11EB19AE100BFCFEA /* DevicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevicesViewController.swift; sourceTree = "<group>"; };
 		993178A31EB14DAC00029443 /* iMIST.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMIST.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		993178A61EB14DAC00029443 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		993178A81EB14DAC00029443 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		993178AB1EB14DAC00029443 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		993178AE1EB14DAC00029443 /* iMIST.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iMIST.xcdatamodel; sourceTree = "<group>"; };
 		993178B01EB14DAC00029443 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		993178B31EB14DAC00029443 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		993178B51EB14DAC00029443 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		993178BB1EB16F7100029443 /* ChartsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
+		993178C11EB1722900029443 /* ChartsBluetoothDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsBluetoothDelegate.swift; sourceTree = "<group>"; };
+		993178C31EB1774600029443 /* BluetoothDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothDevice.swift; sourceTree = "<group>"; };
+		996DF2F71EB309C7002DF662 /* CMUTChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMUTChartView.swift; sourceTree = "<group>"; };
+		996DF2F91EB30C11002DF662 /* ChartCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartCell.swift; sourceTree = "<group>"; };
+		99978A7E1EB268690037AEB9 /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		99978A801EB2691B0037AEB9 /* CMUTCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMUTCell.swift; sourceTree = "<group>"; };
+		C045F0C278AC98A55202EED6 /* Pods-iMIST.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMIST.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iMIST/Pods-iMIST.debug.xcconfig"; sourceTree = "<group>"; };
+		C2BC3ABA2AF13377BC663B20 /* Pods-iMIST.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMIST.release.xcconfig"; path = "Pods/Target Support Files/Pods-iMIST/Pods-iMIST.release.xcconfig"; sourceTree = "<group>"; };
+		F1EE7EDE06DAC8751311B277 /* Pods_iMIST.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMIST.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				473EC34A8C439C7663A33258 /* Pods_iMIST.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +61,8 @@
 			children = (
 				993178A51EB14DAC00029443 /* iMIST */,
 				993178A41EB14DAC00029443 /* Products */,
+				A83B49C0337271D158C3168A /* Pods */,
+				AA51ED3D4E8E4D2B690A0669 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +77,71 @@
 		993178A51EB14DAC00029443 /* iMIST */ = {
 			isa = PBXGroup;
 			children = (
-				993178A61EB14DAC00029443 /* AppDelegate.swift */,
-				993178A81EB14DAC00029443 /* ViewController.swift */,
+				993178C01EB1707E00029443 /* Assets */,
+				993178BF1EB1706100029443 /* Views */,
+				993178BE1EB1704F00029443 /* Models */,
+				993178BD1EB1704800029443 /* Controllers */,
+			);
+			path = iMIST;
+			sourceTree = "<group>";
+		};
+		993178BD1EB1704800029443 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				993178BB1EB16F7100029443 /* ChartsViewController.swift */,
+				9915ADC11EB19AE100BFCFEA /* DevicesViewController.swift */,
+				99978A7E1EB268690037AEB9 /* DataViewController.swift */,
+				99978A801EB2691B0037AEB9 /* CMUTCell.swift */,
+				996DF2F91EB30C11002DF662 /* ChartCell.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		993178BE1EB1704F00029443 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				993178C11EB1722900029443 /* ChartsBluetoothDelegate.swift */,
+				993178C31EB1774600029443 /* BluetoothDevice.swift */,
+				996DF2F71EB309C7002DF662 /* CMUTChartView.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		993178BF1EB1706100029443 /* Views */ = {
+			isa = PBXGroup;
+			children = (
 				993178AA1EB14DAC00029443 /* Main.storyboard */,
-				993178B01EB14DAC00029443 /* Assets.xcassets */,
 				993178B21EB14DAC00029443 /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		993178C01EB1707E00029443 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				993178A61EB14DAC00029443 /* AppDelegate.swift */,
+				993178B01EB14DAC00029443 /* Assets.xcassets */,
 				993178B51EB14DAC00029443 /* Info.plist */,
 				993178AD1EB14DAC00029443 /* iMIST.xcdatamodeld */,
 			);
-			path = iMIST;
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		A83B49C0337271D158C3168A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C045F0C278AC98A55202EED6 /* Pods-iMIST.debug.xcconfig */,
+				C2BC3ABA2AF13377BC663B20 /* Pods-iMIST.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AA51ED3D4E8E4D2B690A0669 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1EE7EDE06DAC8751311B277 /* Pods_iMIST.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +151,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 993178B81EB14DAC00029443 /* Build configuration list for PBXNativeTarget "iMIST" */;
 			buildPhases = (
+				526F6BB94464A21EE61E434C /* [CP] Check Pods Manifest.lock */,
 				9931789F1EB14DAC00029443 /* Sources */,
 				993178A01EB14DAC00029443 /* Frameworks */,
 				993178A11EB14DAC00029443 /* Resources */,
+				38E3EF8A4B52626D8FDB9F34 /* [CP] Embed Pods Frameworks */,
+				E7709AB6CEE3385DD1E6467F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,13 +215,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		38E3EF8A4B52626D8FDB9F34 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iMIST/Pods-iMIST-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		526F6BB94464A21EE61E434C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E7709AB6CEE3385DD1E6467F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iMIST/Pods-iMIST-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9931789F1EB14DAC00029443 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				993178A91EB14DAC00029443 /* ViewController.swift in Sources */,
+				996DF2F81EB309C7002DF662 /* CMUTChartView.swift in Sources */,
+				993178BC1EB16F7100029443 /* ChartsViewController.swift in Sources */,
+				99978A7F1EB268690037AEB9 /* DataViewController.swift in Sources */,
+				99978A811EB2691B0037AEB9 /* CMUTCell.swift in Sources */,
+				993178C41EB1774600029443 /* BluetoothDevice.swift in Sources */,
 				993178AF1EB14DAC00029443 /* iMIST.xcdatamodeld in Sources */,
+				996DF2FA1EB30C11002DF662 /* ChartCell.swift in Sources */,
+				993178C21EB1722900029443 /* ChartsBluetoothDelegate.swift in Sources */,
+				9915ADC21EB19AE100BFCFEA /* DevicesViewController.swift in Sources */,
 				993178A71EB14DAC00029443 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,12 +398,14 @@
 		};
 		993178B91EB14DAC00029443 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C045F0C278AC98A55202EED6 /* Pods-iMIST.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 47FWPX3KEU;
 				INFOPLIST_FILE = iMIST/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ZiadCorp.iMIST;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZiadCorp.Bluetooth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -276,12 +413,14 @@
 		};
 		993178BA1EB14DAC00029443 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2BC3ABA2AF13377BC663B20 /* Pods-iMIST.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 47FWPX3KEU;
 				INFOPLIST_FILE = iMIST/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ZiadCorp.iMIST;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZiadCorp.Bluetooth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -306,6 +445,7 @@
 				993178BA1EB14DAC00029443 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

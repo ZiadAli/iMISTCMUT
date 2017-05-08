@@ -7,56 +7,59 @@
 //
 
 import UIKit
+import CoreBluetooth
 
-private let reuseIdentifier = "Cell"
+private let reuseIdentifier = "chartCell"
 
 class ChartsViewController: UICollectionViewController {
 
+    var manager:CBCentralManager!
+    var shouldRun = false
+    var startTime = CFAbsoluteTimeGetCurrent()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        // Do any additional setup after loading the view.
+        
+        allDevices = [BluetoothDevice]()
+        connectedDevices = [BluetoothDevice]()
+        manager = CBCentralManager(delegate: self, queue: nil)
+        startTime = CFAbsoluteTimeGetCurrent()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func stopOrStart(_ sender: Any) {
+        shouldRun = !shouldRun
+        resetCurrentChannelAndDevice()
+        if shouldRun {
+            collectionView?.reloadData()
+            startDataCollection()
+        }
     }
-    */
-
-    // MARK: UICollectionViewDataSource
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        print("Connected Devices Count: \(connectedDevices.count)")
+        return connectedDevices.count
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
-        return 0
+        return connectedDevices[section].deviceChannels.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-    
-        // Configure the cell
-    
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ChartCell
+        let device = connectedDevices[indexPath.section]
+        let channel = device.deviceChannels[indexPath.row]
+        print("Channel: \(channel)")
+        
+        if Array(device.charts.keys).contains(channel) == false {
+            device.charts[channel] = cell.cmutChart
+        }
+        
         return cell
     }
 

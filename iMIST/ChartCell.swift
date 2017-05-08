@@ -10,4 +10,6 @@ import UIKit
 
 class ChartCell: UICollectionViewCell {
     
+    @IBOutlet var cmutChart: CMUTChartView!
+    
 }
