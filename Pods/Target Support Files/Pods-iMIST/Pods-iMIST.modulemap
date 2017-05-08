@@ -1,0 +1,6 @@
+framework module Pods_iMIST {
+  umbrella header "Pods-iMIST-umbrella.h"
+
+  export *
+  module * { export * }
+}
