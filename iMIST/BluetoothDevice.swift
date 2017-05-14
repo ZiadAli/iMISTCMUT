@@ -20,7 +20,16 @@ class BluetoothDevice:AnyObject {
     var connected = false
     var isConnecting = false
     
-    var deviceChannels:[UInt8] = [0x00, 0x10, 0x40, 0x70]
+    var deviceChannels:[UInt8] = [0x00, 0x10, 0x06, 0x07, 0x08]
+    
+    var measurePressure = true
+    var measureTemperature = true
+    var measureHumidity = true
+    
+    let pressureUint = 0x07
+    let temperatureUint = 0x06
+    let humidityUint = 0x08
+    
     var mostRecentMeasurement:[UInt8:Double] = [UInt8:Double]()
     var measurements:[UInt8:[[Double]]] = [UInt8:[[Double]]]()
     
@@ -65,6 +74,12 @@ class BluetoothDevice:AnyObject {
     func runDevice(channelIndex:Int) {
         guard deviceChannels.count > channelIndex else {return}
         let channel = deviceChannels[channelIndex]
+        
+        guard channel != 0x06 && channel != 0x07 && channel != 0x08 else {
+            runDeviceSecondary(commandIndex: channel)
+            return
+        }
+        
         guard let peripheral = peripheral else {return}
         guard let characteristic = characteristic else {return}
         DispatchQueue.global().async {
@@ -81,6 +96,17 @@ class BluetoothDevice:AnyObject {
             
             //Read SPI
             let spiData = self.getDataFromArray(dataArray: [0x04, 0x08, 0x04])
+            peripheral.writeValue(spiData, for: characteristic, type: .withResponse)
+            usleep(50000)
+        }
+    }
+    
+    func runDeviceSecondary(commandIndex:UInt8) {
+        guard let peripheral = peripheral else {return}
+        guard let characteristic = characteristic else {return}
+        DispatchQueue.global().async {
+            //Read SPI
+            let spiData = self.getDataFromArray(dataArray: [commandIndex])
             peripheral.writeValue(spiData, for: characteristic, type: .withResponse)
             usleep(50000)
         }
